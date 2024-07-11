@@ -1,0 +1,202 @@
+/* -----------------------------------------poppons font-------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ------------------------------------------global css-----------------------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    color: #333;
+
+}
+
+h1,
+h2,
+p {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ---------------------------------------header css------------------------------------------- */
+header div {
+    background: #333;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 26px;
+}
+
+header p {
+    padding: 26px 0px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* -------------------------------------container css-------------------------------------------- */
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+
+.container h2 {
+    font-size: 18px;
+}
+
+.studDetails {
+    width: 30%;
+    border-right: 1.5px dotted lightgray;
+}
+
+.records {
+    width: 70%;
+    padding-left: 20px;
+}
+
+/* -------------------------------------student form css---------------------------------------- */
+
+form {
+    font-size: 13px;
+    padding-top: 5px;
+
+}
+
+form button {
+    display: block;
+}
+
+label {
+    display: block;
+}
+
+form input {
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    box-shadow: inset 1px 1px 14px #434348;
+
+}
+
+input[type='text'],
+input[type='number'],
+input[type='email'] {
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.deleteButton {
+    text-align: center;
+}
+
+
+/* ---------------------------------record css------------------------------------- */
+.recTable {
+    max-height: 300px;
+    /* Adjust based on your needs */
+    overflow-y: auto;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+th {
+    background-color: #f2f2f2;
+    position: sticky;
+    top: -1px;
+    z-index: 1;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+tr td:nth-child(3) {
+    word-break: break-all;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
+
+
+
+/* ----------------------media query starts for smaller devices-------------------------------------- */
+
+@media only screen and (max-width: 800px) {
+
+    .container {
+        flex-wrap: wrap;
+        width: 80%;
+
+    }
+
+    .studDetails {
+        width: 100%;
+        border: none;
+    }
+
+    .records {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    table {
+        font-size: 10px;
+    }
+
+    tr td:nth-child(1) {
+        word-break: break-all;
+    }
+
+    tr td:nth-child(4) {
+        word-break: break-all;
+    }
+
+    button {
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    th,
+    td {
+        padding: 3px;
+    }
+}
+
+/* media query end for smaller devices */
